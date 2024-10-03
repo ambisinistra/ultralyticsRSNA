@@ -162,11 +162,11 @@ def nms_rotated(boxes, scores, threshold=0.45):
 
 def non_max_suppression(
     prediction,
-    conf_thres=0.25,
-    iou_thres=0.45,
+    conf_thres=0.1,
+    iou_thres=0.3,
     classes=None,
     agnostic=False,
-    multi_label=False,
+    multi_label=True,
     labels=(),
     max_det=300,
     nc=0,  # number of classes (optional)
